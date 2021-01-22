@@ -1,0 +1,43 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.companystate {
+    align-items: center;
+    //    color: $gray-500; color changed according to Rouven Küng
+    color: $danger;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+
+    .signal {
+        //    background-color: $gray-500; color changed according to Rouven Küng
+        background-color: $danger;
+        border-radius: 25px;
+        margin-right: 10px;
+        height: 25px;
+        width: 25px;
+    }
+
+    &.active {
+        color: $success;
+
+        .signal {
+            background-color: $success;
+        }
+    }
+
+    &.liquidation {
+        color: #ffe082;
+
+        .signal {
+            background-color: #ffe082;
+        }
+    }
+
+    .signal {
+    }
+}

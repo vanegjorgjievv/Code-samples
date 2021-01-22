@@ -1,0 +1,20 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.popover {
+  border: none;
+  @include mdc-elevation--z8;
+  max-width: 320px;
+
+  &-body {
+    //    padding: .75rem 1rem;
+    padding: 1rem
+  }
+
+  .arrow {
+    &:before {
+//      display: none;
+    }
+  }
+}

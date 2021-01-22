@@ -1,0 +1,57 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.table {
+  th,
+  td {
+    vertical-align: auto;
+    padding: 0.5rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  thead {
+    th {
+      border-bottom-width: 1px;
+      border-top: none;
+      font-weight: 400;
+      //      font-size: .875rem;
+    }
+  }
+  // size
+  &-sm {
+    td, th {
+      padding: .25rem 0.5rem;
+    }
+  }
+
+  &-lg {
+    td, th {
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  &-layout-fixed {
+    table-layout: fixed;
+  }
+  // overflow elliping the texts when table layout is fixed and colgroup is set
+  &-cropped {
+    th, td{
+
+//      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+.table thead th {
+  border-bottom-color: transparentize($black,.75);
+}
+.table th, .table td {
+  border-top-color: transparentize($black,.75);
+}
+

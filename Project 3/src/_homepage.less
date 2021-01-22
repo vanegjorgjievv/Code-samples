@@ -1,0 +1,618 @@
+@import "_variables";
+
+.homepage-slider {
+  position: absolute;
+  top: -170px;
+  .slider-text {
+    position: absolute;
+    right: 5%;
+    top: 21%;
+    z-index: 110;
+    text-align: right;
+    .slider-title {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
+    .slider-ptext {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 50px;
+      padding-left:66%;
+      text-align: right;
+
+      color: #FFFFFF;
+
+    }
+    .slider-button {
+      background: @color-white;
+      border-radius: 50px;
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #DC052C;
+      padding: 10px 30px;
+    }
+  }
+  .slider-red-stripe {
+    position: absolute;
+    height: 100%;
+    /* background: red; */
+    width: 20%;
+    right: 0;
+    top: 0;
+    background: rgba(191, 37, 49, 0.8);
+    z-index: 100;
+  }
+  .separator-homepage-top {
+    z-index: 99999;
+    bottom: -35px;
+  }
+}
+
+.start-welcome {
+  @media (min-width: 1400px) {
+    padding: 5% 12%;
+  }
+  margin-top: 45%;
+  padding: 5% 5%;
+  div:nth-child(1) {
+    position: relative;
+  }
+  div:nth-child(2) {
+    margin-left: 25px;
+    display:grid;
+    grid-template-columns: 150px 100px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    .wp-block-image {
+      position: absolute;
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        right: 0;
+        top: 20px;
+      }
+      &:nth-child(3) {
+        left: 0;
+        top: 195px;
+        @media(min-width: 992px) and (max-width: 1200px) {
+          top: 130px;
+        }
+      }
+      &:nth-child(4) {
+        right: 0;
+        top: 295px;
+        @media(min-width: 992px) and (max-width: 1200px) {
+          top: 200px;
+        }
+      }
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      @media(min-width: 992px) and (max-width: 1200px) {
+        img {
+          max-width: 66%;
+        }
+      }
+
+    }
+  }
+
+  .arrow-willkommen {
+    background: url("/wp-content/uploads/images/arrows/arrow_willkommen.png");
+    height: 170px;
+    width: 225px;
+    position: absolute;
+    right: -17%;
+    z-index: 99;
+    bottom: -30%;
+  }
+}
+.separator-quotes {
+  top: 80px;
+  position: absolute;
+}
+.start-quote {
+  .quotes-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  padding: 10% 15% 5% 15%;
+  background: @color-gray-primary;
+  margin: 0;
+  margin-top: 100px;
+  .main-text {
+    text-align: center;
+    font-family: @font-family-roboto-montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: @color-black
+  }
+  .small-text {
+    text-align: center;
+    font-style: italic;
+    font-family: @font-family-roboto-montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 30px;
+    color: @color-black
+  }
+}
+
+.start-text-image {
+  .wp-block-columns {
+    margin:0px;
+    padding:0px;
+    &:last-child {
+      box-shadow: 0 15px 27px -25px grey;
+    }
+  }
+  .wp-block-column {
+    position: relative;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .wp-block-image {
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      text-align: center;
+      width: 85%;
+      &.box-text {
+        margin-bottom:30px;
+      }
+    }
+  }
+
+  .arrow-unser-versprechen {
+    background: url("/wp-content/uploads/images/arrows/arrow_unser_versprechen.png");
+    position: absolute;
+    width: 113px;
+    height: 103px;
+    right: -8%;
+    top: 17%;
+    z-index: 99;
+  }
+  .arrow-nachhaltigkeit {
+    background: url("/wp-content/uploads/images/arrows/arrow_nachhaltigkeit.png");
+    width: 113px;
+    height: 103px;
+    position: absolute;
+    bottom: 0;
+    left: -9%;
+  }
+
+  .arrow-qualitat {
+    background: url("/wp-content/uploads/images/arrows/arrow_qualitat.png");
+    width: 113px;
+    height: 103px;
+    bottom: 10%;
+    z-index: 99;
+    right: -9%;
+    position: absolute;
+  }
+}
+
+///wp-content/uploads/images/slow_brewing_header.png
+.start-shops {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  .wp-block-column {
+    position: relative;
+  }
+  .shop-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .ptext {
+    padding: 0 20% 5%;
+  }
+  .arrow_besteauswahl {
+    position: absolute;
+    width: 93px;
+    height: 176px;
+    right: 15%;
+    background: url(/wp-content/uploads/images/arrows/arrow_besteauswahl.png);
+    top: 10%;
+  }
+}
+
+.start-zertifiziert {
+  background: url("/wp-content/uploads/images/slow_brewing_header.png");
+  filter: brightness(90%);
+  padding-top: 8%;
+  //margin-top: 10%;
+  padding-bottom: 160px;
+  background-size: cover;
+  .wp-block-column:first-child {
+    position: relative;
+    padding-top: 85px;
+    .wp-block-image {
+      top: 61%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+  p {
+    margin: 3% 20%;
+  }
+  .arrow-zertifiziert {
+    background: url("/wp-content/uploads/images/arrows/arrow_zertifiziert.png");
+    position: absolute;
+    width: 184px;
+    height: 115px;
+    right: 26%;
+    bottom: 2%;
+  }
+}
+.separator-top-zertifiret {
+  z-index: 99;
+}
+.separator-bottom-zertifizerit {
+  top: -127px;
+}
+.start-fuhrung {
+  @media (min-width: 1400px) {
+    padding: 5% 12%;
+  }
+  //margin-top: 8%;
+  .title {
+    margin-top: 60px;
+  }
+  .ptext {
+    @media(min-width: 1400px) {
+      width: 80%;
+    }
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  >div {
+    position: relative;
+    figure:nth-child(1) {
+      img {
+        position: absolute;
+        z-index: 20;
+        top: 80px;
+      }
+    }
+    figure:nth-child(2) {
+      position: absolute;
+      right: 0;
+      z-index: 10;
+    }
+  }
+}
+/** old css */
+.wpb_content_element {
+  margin-bottom: 0px !important;
+
+}
+#welcome-text {
+  //margin-top: @sectionMarginTop;
+  .welcome-title {
+    font-weight: 500;
+    font-family: @font-family-roboto-slab;
+    font-style: normal;
+    color: #DC052C;
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .welcome-subtitle  {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 55px;
+
+  }
+
+  .welcome-text {
+    font-family: @font-family-roboto-montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+    line-height: 28px;
+  }
+}
+
+#welcome-gallery {
+  .wpb_wrapper {
+  //  margin: 20px auto;
+    margin-left: 25px;
+    display:grid;
+    grid-template-columns: 150px 100px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+
+    .wpb_single_image {
+      position: absolute;
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        right: 0;
+        top: 20px;
+      }
+      &:nth-child(3) {
+        left: 0;
+        top: 120px;
+      }
+      &:nth-child(4) {
+        right: 0;
+        top: 187px;
+      }
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+    }
+
+    .wpb_content_element {
+
+        margin-bottom: 0px;
+
+    }
+  }
+}
+
+.welcome-quote-container {
+  background-color: #E5E5E5;
+  margin-top: @sectionMarginTop;
+  .homepage-quote {
+    padding: 100px;
+    p {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 30px;
+      color: #000;
+      text-align: center;
+    }
+    .small-text {
+      font-family: @font-family-roboto-montserrat;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+    }
+  }
+}
+
+
+#homepage-text-image {
+  .homepage-text-image-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >div {
+      .vc_column-inner {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    h3 {
+      font-family: @font-family-roboto-montserrat;
+      font-weight: 700;
+      font-size: 32px;
+      color: #000;
+      text-align: center;
+
+      text-transform: uppercase;
+    }
+    p {
+      font-family: @font-family-roboto-montserrat;
+      font-size: 16px;
+      text-align: center;
+      margin:40px 40px;
+      font-weight: 400;
+      color: #000;
+    }
+    a {
+      background-color: #DC052C;
+      border-radius: 50px;
+      padding: 10px 30px;
+      font-family: @font-family-roboto-montserrat;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    &:last-child {
+      box-shadow: 0 15px 27px -25px grey;
+    }
+  }
+    .vc_column-inner {
+      //padding:0px;
+      //padding-right: 0px;
+    }
+
+}
+
+.homepage-auswahl {
+  margin-top: @sectionMarginTop;
+  .homepage-auswahl-text {
+    text-align: center;
+    .title {
+      font-weight: 500;
+      font-family: @font-family-roboto-slab;
+      font-style: normal;
+      color: #DC052C;
+      font-size: 50px;
+      line-height: 40px;
+    }
+    .subtitle {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 55px;
+    }
+    .text {
+      font-family: @font-family-roboto-montserrat;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      color: #000;
+      line-height: 28px;
+    }
+  }
+  .homepage-auswahl-images {
+    margin-top: 50px;
+    .wpb_wrapper {
+      display: inline-flex;
+      gap: 12px;
+    }
+  }
+  .homepage-auswahl-buttons {
+    margin: 50px 100px 100px;
+    text-align: center;
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+
+}
+
+.homepage-zertifiziert {
+  text-align: center;
+  background-image: url('/wp-content/uploads/images/homepage_zertifiziert.png');
+  background-size: cover;
+  padding: 18%;
+  .title {
+    font-weight: 500;
+    font-family: @font-family-roboto-slab;
+    font-style: normal;
+    color: #fff;
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 55px;
+    color: #fff;
+
+  }
+
+  .text {
+    font-family: @font-family-roboto-montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    margin: 10px 30px 30px;
+  }
+}
+
+.homepage-fuhrung {
+  padding : 10%;
+  .homepage-fuhrung-text {
+    >div {
+      padding-top: 60px;
+    }
+    .title {
+      font-weight: 500;
+      font-family: @font-family-roboto-slab;
+      font-style: normal;
+      color: #DC052C;
+      font-size: 50px;
+      line-height: 40px;
+    }
+
+    .subtitle  {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 55px;
+
+    }
+
+    .text {
+      font-family: @font-family-roboto-montserrat;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      color: #000;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+  }
+  .homepage-fuhrung-images {
+    .fuhrung-img {
+      position: absolute;
+    }
+    .fuhrung-img-2 {
+      z-index: 99;
+      top: 60px;
+      left: -5%;
+      img {
+        max-height: 330px;
+        height: 330px;
+
+      }
+    }
+    .fuhrung-img-1 {
+      right: 0;
+    }
+  }
+}

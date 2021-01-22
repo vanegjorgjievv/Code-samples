@@ -1,0 +1,92 @@
+@import "_variables";
+
+.header-text.heandler-finden {
+  top: 8%;
+}
+
+.heandler-finden-text, .heandler-finder-shop-text {
+  .title, .subtitle {
+    text-align: center;
+  }
+  .ptext {
+    text-align: center;
+    padding: 0 20%;
+    margin-bottom: 50px;
+  }
+}
+.heandler-finder-shop-text {
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.heandler-finder-shop-button {
+  text-align: center;
+  a {
+    cursor: pointer;
+  }
+}
+
+.store-locator {
+  label {
+    font-family: @font-family-roboto-montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @color-black;
+  }
+  .wpsl-dropdown {
+    min-height: 48px;
+  }
+}
+.wpsl-search {
+  background: #F7F7F7;
+  height: 90px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  #wpsl-search-wrap {
+    //margin-bottom: 15px;
+    form {
+      div {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.wpsl-input label, #wpsl-radius label, #wpsl-category label {
+  width: auto !important;
+}
+#wpsl-search-btn, #wpsl-search-wrap input {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 2px;
+  min-height: 48px;
+}
+#wpsl-search-btn, #wpsl-search-wrap input.btn.btn-default {
+  background: @color-red-primary;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: @color-white;
+
+  font-family: @font-family-roboto-montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  text-align: center;
+  text-transform: uppercase !important;
+}
+#wpsl-category, .wpsl-input, .wpsl-select-wrap {
+  margin-bottom: 0px;
+}

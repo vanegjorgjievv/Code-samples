@@ -1,0 +1,69 @@
+.badge {
+  line-height: 15px;
+  text-transform: uppercase;
+  vertical-align: top;
+
+  &-round {
+    border-radius: 100%;
+  }
+
+  &-img {
+    background-size: cover;
+    display: inline-block !important;
+  }
+
+  &-size {
+    &-35 {
+      height: 35px;
+      min-width: 35px;
+      padding: 0;
+      width: 35px;
+
+      .mdi {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+
+    &-60 {
+      height: 60px;
+      min-width: 60px;
+      padding: 0;
+      width: 60px;
+
+      .mdi {
+        font-size: 36px;
+        line-height: 60px;
+      }
+    }
+
+    &-140 {
+      height: 140px;
+      min-width: 140px;
+      padding: 0;
+      width: 140px;
+
+      .mdi {
+        font-size: 72px;
+        line-height: 140px;
+      }
+    }
+  }
+
+  &list {
+    &.badge {
+      background-color: rgba(0,0,0,0);
+      border: 1px solid transparentize($black,.5);
+      color: transparentize($black,.5);
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 7.5px;
+      text-transform: none;
+      padding: 10px 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      max-width: 100%;
+    }
+  }
+}

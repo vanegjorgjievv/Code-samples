@@ -1,0 +1,7 @@
+@import "../scss/_variables.scss";
+
+.divide {
+  &-dashed {
+    border-bottom: 1px dashed ;
+  }
+}

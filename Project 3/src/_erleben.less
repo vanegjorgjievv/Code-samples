@@ -1,0 +1,100 @@
+@import "_variables";
+.downloads-wrapper {
+  background: #f8f8f8;
+  padding-bottom: 80px;
+  .downloads-title {
+    margin-top: 120px;
+    .subtitle {
+      text-align: center;
+    }
+  }
+}
+
+.header-text.erleben {
+  top: 6%;
+}
+.arrow_schweiger_erleben {
+  position: absolute;
+  background: url("/wp-content/uploads/images/arrows/arrow_schweiger_erleben.png");
+  width: 97px;
+  height: 115px;
+  right: 46%;
+  top: 11%;
+}
+.separator-erleben-header {
+  top: -140px;
+}
+.social-netowkrs {
+ padding: 0 11%;
+}
+.images-square-wrapper {
+  position: relative;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  .social-media-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .social-media-text {
+      h3 {
+        font-family: @font-family-roboto-montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #DC052C;
+      }
+      p {
+        margin-bottom: 0;
+        font-family: @font-family-roboto-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+    .social-media-links {
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 9px;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        justify-content: space-between;
+        .icon {
+          width: 70px;
+          height: 70px;
+        }
+        .fb-icon {
+          &:before {
+            content: url("/wp-content/uploads/images/fb_icon.png");
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .ig-icon {
+          &:before {
+            content: url("/wp-content/uploads/images/ig_icon.png");
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .yt-icon {
+          &:before {
+            content: url("/wp-content/uploads/images/yt_icon.png");
+            height: 70px;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}

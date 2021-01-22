@@ -1,0 +1,200 @@
+// stylelint-disable selector-no-qualifying-type
+
+@import "../scss/_variables.scss";
+
+.page-header {
+    $header-gradient-color-start: $primary-500;
+    $header-gradient-color-end: $primary-600;
+    $header-gradient-deg: 86deg;
+
+    color: $white;
+    position: relative;
+
+    hr {
+        border-top-color: rgba(255,255,255,.25);
+    }
+
+    &-bg {
+        //    overflow: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+
+        &:before {
+            bottom: 0;
+            background: $header-gradient-color-start; // ballback
+            background: -moz-linear-gradient($header-gradient-deg, $header-gradient-color-start 50%, $header-gradient-color-end 100%); // ballback
+            background: -webkit-linear-gradient($header-gradient-deg, $header-gradient-color-start 50%, $header-gradient-color-end 100%); // ballback
+            background: linear-gradient($header-gradient-deg, $header-gradient-color-start 50%, $header-gradient-color-end 100%);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: skewY(-3deg);
+            transform-origin: top left;
+            width: 100%;
+        }
+
+        &-img {
+            //      background-color: transparent;
+            //     background-size: cover;
+            //     background-position: center;
+            content: "";
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: skewY(-3deg);
+            transform-origin: top left;
+            width: 100%;
+
+            img {
+                transform: skewY(3deg);
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) skewY(3deg);
+            }
+
+            &:after {
+                content: "";
+                background-repeat: no-repeat;
+                background-position: top left;
+                transform: skewY(3deg);
+            }
+
+            &:before {
+                background-color: transparentize($black,.375);
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                //        z-index: 1;
+            }
+        }
+    }
+
+    hr {
+    }
+
+    .do-toggle-mobilenav {
+        background-color: rgba(0,0,0,0) !important;
+        border: none;
+        color: $white !important;
+        //    z-index: 5;
+        //    position: fixed;
+        position: relative;
+        //    right: -10px;
+        //    top: -10px;
+        &.collapsed {
+            right: 0;
+            top: 0;
+
+            &:hover {
+            }
+        }
+    }
+
+    .navbar {
+        //    border-bottom: 1px solid transparentize($white,.5);
+        border-bottom: 1px solid transparentize($white,.25);
+
+        &-collapse {
+            //      display: flex;
+            flex: auto;
+            justify-content: flex-end;
+        }
+
+        .language,
+        &-nav {
+            flex-direction: row;
+
+            a {
+                color: transparentize($white,.25);
+                padding: 10px;
+
+                &.active,
+                &:hover {
+                    color: transparentize($white,0)
+                }
+            }
+
+
+            .active {
+                a {
+                    color: transparentize($white,0)
+                }
+            }
+        }
+
+        // header language elements
+        .language-link-btn {
+            color: rgba(255, 255, 255, 0.75);
+            padding: 10px;
+            -webkit-transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+            background: transparent;
+            border: none;
+        }
+
+        .language-link-btn:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .language-link-btn:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .active-link {
+            color: white;
+        }
+    }
+
+    picture {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.heading {
+  &-title {
+    &.large {
+      font-size: 3rem;
+    }
+  }
+
+  &-homepage {
+    h3 {
+      color: transparentize($white,.25);
+    }
+  }
+}
+
+
+// user stuff inside the header
+.user {
+  &-menu {
+    &-trigger {
+      color: $white;
+      display: inline-block;
+      line-height: 1.25;
+
+      &:hover {
+        color: $text-muted-white;
+       // color: $white;
+      }
+    }
+  }
+}

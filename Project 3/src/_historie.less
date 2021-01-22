@@ -1,0 +1,369 @@
+@import "_variables";
+
+
+.header-text.historie {
+  top: 6% ;
+}
+.separator-historie-header {
+  top: -170px;
+}
+.arrow-die-historie {
+  background: url("/wp-content/uploads/images/arrows/arrow_die_historie.png");
+  position: absolute;
+  width: 97px;
+  height: 117px;
+  top: 12%;
+  right: 46%;
+}
+
+.arrow-historie {
+  position: absolute;
+  &-bottom-right {
+    width: 140px;
+    height: 99px;
+    background: url("/wp-content/uploads/images/arrows/arrow_bottom_right.png");
+  }
+  &-bottom-left {
+    background: url("/wp-content/uploads/images/arrows/arrow_bottom_left.png");
+    width: 127px;
+    height: 63px;
+  }
+  &-top-left {
+    background: url("/wp-content/uploads/images/arrows/arrow_top_left.png");
+    width: 131px;
+    height: 71px;
+  }
+  &-top-right {
+    background: url("/wp-content/uploads/images/arrows/arrow_top_right.png");
+    width: 127px;
+    height: 63px;
+  }
+  &-1869 {
+    bottom: 30px;
+  }
+  &-1919 {
+    right: 10px;
+    bottom: -50px;
+  }
+  &-1934 {
+    top: 0;
+  }
+  &-1935 {
+    bottom: 20%;
+    left: 34%;
+  }
+  &-1949 {
+    top: 0;
+    right: 37%;
+    transform: rotate(23deg);
+  }
+  &-1963 {
+    right: 30%;
+    bottom: 33%;
+  }
+  &-1973 {
+    top: 20%;
+    transform: rotate(23deg);
+  }
+  &-1989 {
+    top: -50px;
+    right: 15px;
+  }
+  &-1993 {
+    left: 5%;
+    top: 50%;
+  }
+  &-1994 {
+    bottom: 2%;
+    transform: rotate(20deg);
+    left: 35%;
+  }
+  &-1998 {
+    top: 4%;
+    left: 40%;
+    transform: rotate(20deg);
+  }
+  &-2003 {
+    top: 10%;
+    transform: rotate(-15deg);
+  }
+  &-2008 {
+    bottom: 10%;
+  }
+  &-2013 {
+    bottom: 14%;
+    right: 26%;
+    transform: rotate(-10deg);
+  }
+  &-2016 {
+    top: 0;
+  }
+  &-2018 {
+    top: 0;
+  }
+}
+.historie-text {
+  .title, .subtitle {
+    text-align: center;
+  }
+  .text-wrapper {
+    .wp-block-column:nth-child(1) {
+      padding-left: 10%;
+    }
+    .wp-block-column:nth-child(2) {
+      padding-right: 10%;
+    }
+  }
+}
+
+.timeline-wrapper {
+  position: relative;
+  background: url("/wp-content/uploads/images/historie_background.png") #f8f8f8;
+  .row {
+
+    display: flex;
+    &:nth-child(even) {
+      .col-md-2 {
+        justify-content: flex-start;
+        .year {
+          margin:-3px;
+          @media(max-width: 992px) {
+            margin: 10px;
+          }
+        }
+      }
+
+    }
+    &:nth-child(odd) {
+      .col-md-2 {
+        justify-content: flex-end;
+        .year {
+          margin:-3px;
+          @media(max-width: 992px) {
+            margin: 10px;
+          }
+        }
+      }
+    }
+    .timeline-text {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: @color-black;
+
+      @media(max-width: 992px) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+  .col-md-2 {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    background: @color-red-primary;
+    .year {
+
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 55px;
+      line-height: 70px;
+      text-transform: uppercase;
+      color: #F7F7F7;
+
+      @media(max-width: 992px) {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+    }
+  }
+}
+
+/** each row specific */
+.row-1869 {
+  .content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    .timeline-text {
+      padding-right: 30px;
+    }
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}
+
+.row-1919, .row-1989 {
+  .timeline-text {
+    text-align: right;
+    padding-right: 25px;
+  }
+}
+
+.row-1934, .row-1993, .row-2016 {
+  .timeline-text {
+    padding: 40px;
+  }
+}
+
+.row-1935 {
+  .content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    .timeline-text {
+      padding-right: 10px;
+      text-align: right;
+    }
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}
+
+.row-1949 {
+  .content-wrapper {
+    &:first-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    &:last-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    .timeline-text {
+      padding-left: 20px;
+      text-align: left
+    }
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}
+
+.row-1963, .row-1994, .row-2003, .row-2013, .row-2018 {
+  .content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    .timeline-text {
+      padding-right: 10px;
+      text-align: right;
+    }
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      //flex-basis: 0;
+    }
+  }
+}
+.row-2013, .row-2018 {
+  .timeline-image {
+    width: 110%;
+  }
+}
+.row-1994, .row-2003 {
+  .content-wrapper {
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}
+
+.row-1973, .row-1998, .row-2008 {
+  .content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    .timeline-text {
+      padding-left: 20px;
+      text-align: left;
+    }
+    .timeline-text, .timeline-image {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .row-1935 {
+    margin-top: -50px;
+  }
+  .row-1949 {
+    margin-top: -80px;
+  }
+  .row-1963 {
+    margin-top: -100px;
+  }
+  .row-1973 {
+    margin-top: -115px;
+  }
+  .row-1989 {
+    margin-top: -60px;
+  }
+  .row-1998 {
+    margin-top: -40px;
+  }
+  .row-2003 {
+    margin-top: -70px;
+  }
+  .row-2008 {
+    margin-top: -80px;
+  }
+  .row-2013 {
+    margin-top: -90px;
+  }
+  .row-2016 {
+    margin-top: -75px;
+  }
+}
+@media (max-width: 992px) {
+  .timeline-wrapper  .col-md-2 {
+    justify-content: center;
+    min-width: 90px;
+  }
+  .timeline-wrapper .row:nth-child(even) .col-md-2 {
+    justify-content: center;
+  }
+  .timeline-wrapper .row:nth-child(even) .col-md-2 {
+    justify-content: center;
+  }
+  .timeline-wrapper {
+    .row {
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

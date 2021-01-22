@@ -1,0 +1,38 @@
+@import "../scss/_variables.scss";
+@import "../scss-modifications/_elevations.scss";
+@import "../scss-modifications/_transition.scss";
+
+.cropped {
+  @include system-transition;
+  overflow: hidden;
+  position: relative;
+
+  &-action {
+    background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%);
+    border: none !important;
+    padding: 0 0 0 50%;
+    margin: 0 0 0 -50%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+  // sizes
+  &-3 {
+    max-height: 4.5rem; // 3 times the font size plus 1 line height
+  }
+
+  &-open {
+    max-height: 100vh;
+    //overflow: auto;
+
+    .cropped-action {
+      display: none;
+    }
+  }
+  // one line cropped with ellipsis
+  &-single {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

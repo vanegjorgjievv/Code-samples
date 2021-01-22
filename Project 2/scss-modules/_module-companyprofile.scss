@@ -1,0 +1,60 @@
+// stylelint-disable selector-no-qualifying-type
+
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.module-companyprofile {
+
+  &-data {
+    position: relative;
+  }
+
+  &-tabs {
+    .nav-item {
+      &:hover {
+        .nav-link.disabled {
+          //          color: $text-muted-white
+        }
+      }
+    }
+  }
+
+  &-tabcontent {
+    @include mdc-elevation--z8;
+    margin-top: 1px;
+
+    .tab-pane {
+      padding: 30px;
+
+      @include media-breakpoint-down(md) {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.em-companyprofile {
+  .nav-tabs {
+    border-top: 1px solid rgba(255,255,255,.25);
+
+    .nav-link {
+      border-color: rgba(255,255,255,0);
+      color: $white;
+      &.disabled {
+        color: $btn-link-disabled-color
+      }
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      border-color: rgba(255,255,255,.25);
+    }
+
+
+    .nav-link.active, .nav-item.show .nav-link {
+      background-color: rgba(0,0,0,0);
+      border-color: $secondary;
+      color: $secondary;
+    }
+  }
+}

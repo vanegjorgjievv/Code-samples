@@ -1,0 +1,57 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.card {
+  //  border-radius: 5px; all border radiusses except for buttons must be removed according to Rouven Küng
+  border-radius: 0; // see above line
+  word-wrap: normal;
+
+  &-linked {
+    @include mdc-elevation-transition;
+    @include mdc-elevation--z0;
+
+    &:hover {
+      @include mdc-elevation--z12;
+    }
+  }
+
+  &-footer {
+    //    background-color: $gray-100;
+    background-color: $white;
+
+    &.buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+    }
+  }
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    //    min-width: 320px;
+    margin-bottom: $card-deck-margin
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-flow: row wrap;
+    margin-right: -$card-deck-margin;
+    margin-left: -$card-deck-margin;
+    min-width: 320px;
+
+    .card {
+      display: flex;
+      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+      flex: 1 0 0%;
+      flex-direction: column;
+      margin-right: $card-deck-margin;
+      margin-bottom: 0; // Override the default
+      margin-left: $card-deck-margin;
+      min-width: 1px;
+    }
+  }
+}

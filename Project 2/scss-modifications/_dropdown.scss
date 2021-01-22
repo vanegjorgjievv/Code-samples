@@ -1,0 +1,15 @@
+@import "../scss/_variables.scss";
+@import "../scss-modifications/_elevations.scss";
+
+// The dropdown wrapper (`<div>`)
+.dropdown-toggle {
+//  @include caret;
+}
+
+// The dropdown menu
+.dropdown-menu {
+  a {
+    color: $text-muted
+  }
+ }
+

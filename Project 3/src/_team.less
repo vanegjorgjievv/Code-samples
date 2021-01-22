@@ -1,0 +1,325 @@
+@import "_variables";
+
+.header-text.team {
+  top: 6%;
+}
+.team-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.team-text {
+  .title, .subtitle {
+    text-align: center;
+  }
+  .ptext {
+    text-align: center;
+    padding: 0 23%;
+  }
+}
+.arrow_kontaktieren {
+  background: url("/wp-content/uploads/images/arrows/arrow_kontaktieren.png");
+  position: absolute;
+  width: 194px;
+  height: 151px;
+  left: 41%;
+  bottom: 5%;
+}
+.arrow-das-herz {
+  background: url("/wp-content/uploads/images/arrows/arrow_das_herz.png");
+  position: absolute;
+  width: 136px;
+  height: 189px;
+  right: 13%;
+  top: 19%;
+}
+.arrow-team {
+  background: url("/wp-content/uploads/images/arrows/arrow_team.png");
+  position: absolute;
+  width: 97px;
+  height: 110px;
+  right: 47%;
+  top: 11%;
+}
+.empty-gray {
+  background: @color-gray-primary;
+}
+.separator-team-header {
+  bottom: 0;
+}
+.textstyle {
+  h6 {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  p {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+//.team {
+//  margin-bottom: 70px;
+//}
+#team-one {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: 0 -15px;
+  tr {
+    td {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  }
+  .image-wrapper {
+    &:hover {
+      .team-member {
+        display: flex;
+      }
+    }
+    position: relative;
+    .team-member {
+      display: none;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      //background: #BF2531;
+      //opacity: 0.5;
+      background: rgba(191, 37, 49, 0.5);
+      width: 100%;
+      .details {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h6 {
+          font-family: @font-family-roboto-montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 28px;
+          /* identical to box height, or 156% */
+
+          display: flex;
+          align-items: flex-end;
+          text-align: center;
+          text-transform: uppercase;
+          color: @color-white;
+        }
+        p {
+          font-family: @font-family-roboto-montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          /* or 129% */
+
+          text-align: center;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      min-width: 100%;
+      min-height: 301px;
+      height: auto;
+    }
+  }
+  .text-wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 15% 20%;
+    .textstyle;
+    //h6 {
+    //  font-family: @font-family-roboto-montserrat;
+    //  font-style: normal;
+    //  font-weight: bold;
+    //  font-size: 18px;
+    //  line-height: 28px;
+    //  display: flex;
+    //  align-items: flex-end;
+    //  text-align: center;
+    //  text-transform: uppercase;
+    //  color: #FFFFFF;
+    //}
+    //p {
+    //  font-family: @font-family-roboto-montserrat;
+    //  font-style: normal;
+    //  font-weight: 500;
+    //  font-size: 14px;
+    //  line-height: 18px;
+    //  text-align: center;
+    //  color: #FFFFFF;
+    //}
+  }
+  .red-bg {
+    background: #BF2531;
+    max-width: 230px;
+  }
+  .img-7 {
+    min-height: 617px !important;
+  }
+}
+
+
+#team-two {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: -15px -15px;
+  img {
+    display: block;
+    min-width: 100%;
+  }
+  .image-left {
+    min-width: 265px;
+    min-height: 270px;
+  }
+  .image-right {
+    min-height: 270px;
+    min-width: 265px;
+  }
+  .middle {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+  }
+  .christian-text {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    min-height: 270px;
+    background: @color-gray-primary;
+    .left {
+      flex: 1;
+      background: @color-gray-primary;
+      margin-right: 20px;
+    }
+    .right {
+      flex: 1;
+      background: @color-red-primary;
+    }
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      height: 100%;
+      padding: 0 11%;
+      .textstyle;
+    }
+  }
+}
+
+#team-three {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: -15px -15px;
+  img {
+    display: block;
+    min-width: 100%;
+  }
+  .big-image {
+    min-width: 100%;
+  }
+  .vertical {
+    min-height: 100%;
+  }
+}
+
+#team-four {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: -15px -15px;
+  img {
+    min-width: 100%;
+    display: block;
+  }
+  .vertical, .horizontal {
+    min-width: 100%;
+    display: block;
+    height: auto;
+    min-height: auto;
+  }
+
+  .content {
+    max-width: 250px;
+    background: @color-red-primary;
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+     // height: 100%;
+      padding: 0 11%;
+      margin-top: 15%;
+      .textstyle;
+    }
+
+  }
+}
+
+.team-contact {
+  background: url("/wp-content/uploads/images/team_background_1.png");
+  background-size: cover;
+  .wp-block-columns {
+    margin-bottom: 0;
+  }
+  .team-contact-content {
+    background: rgba(191, 37, 49, 0.8);
+    padding: 5% 0% 10% 5%;
+    .title {
+      padding-top: 70px;
+    }
+    .ptext {
+      padding-right: 20%;
+    }
+    .contact-details {
+      margin-top: 40px;
+      .ptext {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .phone-icon {
+      &:before {
+        content: url("/wp-content/uploads/images/phone_icon.png");
+        margin-right: 10px;
+      }
+    }
+    .letter-icon {
+      &:before {
+        content: url("/wp-content/uploads/images/letter_icon.png");
+        margin-right: 10px;
+      }
+    }
+  }
+}

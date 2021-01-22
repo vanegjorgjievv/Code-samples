@@ -1,0 +1,25 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Textual form controls
+//
+
+.form-control {
+  //  border-radius: 45px; all border radiusses except for buttons must be removed according to Rouven Küng
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 45px;
+}
+textarea.form-control {
+  //  border-radius: 20px; all border radiusses except for buttons must be removed according to Rouven Küng
+  border-radius: 0;
+}
+
+.form-control,
+.form-control-plaintext,
+.custom-select,
+.custom-file {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

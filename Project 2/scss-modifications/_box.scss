@@ -1,0 +1,24 @@
+@import "../scss/_variables.scss";
+@import "../scss-modifications/_elevations.scss";
+@import "../scss/mixins/_breakpoints.scss";
+.box {
+  //  border-radius: 5px; all border radiusses except for buttons must be removed according to Rouven Küng
+  padding: 40px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+  }
+
+  &-gray {
+    background-color: $black-100;
+  }
+
+  &-white {
+    background-color: $white;
+  }
+
+  &-shadow {
+    @include mdc-elevation--z8;
+  }
+}

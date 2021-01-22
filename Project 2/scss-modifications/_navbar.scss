@@ -1,0 +1,40 @@
+
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+
+.navbar-mobile {
+  background-color: rgba(0,0,0,.75);
+  @include mdc-elevation--z8;
+  //  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2010;
+
+  .navbar-nav {
+    flex-direction: column !important;
+
+    a {
+      display: inline-block;
+      margin: -4px 0;
+    }
+  }
+
+  &:after {
+  }
+
+  &-content {
+    background-color: $primary;
+    margin-left: auto;
+    height: 100vh;
+    max-width: 100%;
+    overflow: auto;
+    padding: 10px 15px;
+    position: relative;
+    width: 340px;
+    z-index: 2010;
+  }
+}

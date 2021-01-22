@@ -1,0 +1,19 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+// Wrapper for the tooltip content
+.tooltip {
+
+  &-inner {
+    //    background-color: white;
+    //    color: $black;
+    @include mdc-elevation--z16;
+    text-align: left;
+  }
+
+  .arrow {
+    //    @include mdc-elevation--z16;
+  }
+
+}

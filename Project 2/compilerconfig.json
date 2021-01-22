@@ -1,0 +1,10 @@
+[
+  {
+    "outputFile": "css/style.css",
+    "inputFile": "scss/bootstrap.scss",
+    "options": {
+      "relativeUrls": false
+    },
+    "sourceMap": true
+  }
+]

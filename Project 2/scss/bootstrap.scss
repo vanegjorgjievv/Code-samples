@@ -1,0 +1,80 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+
+// modifications and custom components by insyma
+@import "../scss-modifications/_badge.scss";
+@import "../scss-modifications/_borders.scss";
+@import "../scss-modifications/_box.scss";
+@import "../scss-modifications/_breadcrumb.scss";
+@import "../scss-modifications/_buttons.scss";
+@import "../scss-modifications/_card.scss";
+@import "../scss-modifications/_cropped.scss";
+@import "../scss-modifications/_divide.scss";
+@import "../scss-modifications/_dropdown.scss";
+@import "../scss-modifications/_elevations.scss";
+@import "../scss-modifications/_forms.scss";
+@import "../scss-modifications/_infocircle.scss";
+@import "../scss-modifications/_link.scss";
+@import "../scss-modifications/_navbar.scss";
+@import "../scss-modifications/_popover.scss";
+@import "../scss-modifications/_skew.scss";
+@import "../scss-modifications/_table.scss";
+@import "../scss-modifications/_tabs.scss";
+@import "../scss-modifications/_tooltip.scss";
+@import "../scss-modifications/_transition.scss";
+
+// modules and components by insyma
+@import "../scss-modules/_component-companystate.scss";
+@import "../scss-modules/_component-shortlink.scss";
+
+
+@import "../scss-modules/_module-companyprofile.scss";
+@import "../scss-modules/_module-pricing.scss";
+@import "../scss-modules/_module-search.scss";
+
+@import "../scss-modules/_page.scss";
+@import "../scss-modules/_page-footer.scss";
+@import "../scss-modules/_page-header.scss";

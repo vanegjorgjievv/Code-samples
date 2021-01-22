@@ -1,0 +1,112 @@
+@import "_variables";
+
+body {
+  overflow: auto;
+}
+.post-inner-content {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+.title {
+  font-family: @font-family-roboto-slab;
+  font-style: @h3_titleFontWeight;
+  font-size: @h3_titleFontSize;
+  line-height: @h3_lineHeight;
+}
+.title-red {
+  color: @color-red-primary;
+}
+.title-white {
+  color: @color-white;
+}
+
+.subtitle {
+  font-family: @font-family-roboto-montserrat;
+  font-style: @h4_titleFontWeight;
+  font-size: @h4_titleFontSize;
+  line-height: @h4_lineHeight;
+  text-transform: uppercase;
+}
+.subtitle-white {
+  color: @color-white;
+}
+.subtitle-black {
+  color: @color-black;
+}
+//.subtitle {
+//  -white {
+//    color: @color-white;
+//  }
+//  -black {
+//    color: @color-white;
+//  }
+//}
+
+.ptext {
+  font-family: @font-family-roboto-montserrat;
+  font-weight: @pText_FontWeight;
+  font-size: @pText_FontSize;
+  color: @color-black;
+}
+.ptext-white {
+  color: @color-white;
+}
+
+.box-title {
+  font-family: @font-family-roboto-montserrat;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: @color-black;
+}
+.box-text {
+  font-family: @font-family-roboto-montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: @color-black;
+}
+
+.s-btn {
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.s-btn-red {
+    font-family: @font-family-roboto-montserrat;
+    color: @color-white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    background: @color-red-primary;
+}
+
+
+
+.header-text {
+  position: absolute;
+  width: 100%;
+  top: 4%;
+  .header-title {
+    font-family: @font-family-roboto-slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    color: @color-white;
+  }
+  .header-subtitle {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @color-white;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.nav-tabs {
+  border-bottom: none;
+  border-top: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .nav-link {
+    border-width: 0 0 4px 0;
+    border-color: rgba(0,0,0,0);
+    color: $black;
+    font-weight: 600;
+    height: 100%;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    border-width: 0 0 4px 0;
+    border-color: rgba(0,0,0,.25);
+  }
+
+  .nav-link.active, .nav-item.show .nav-link {
+    background-color: rgba(0,0,0,0);
+    border-color: $secondary;
+    border-width: 0 0 4px 0;
+    color: $secondary;
+  }
+}

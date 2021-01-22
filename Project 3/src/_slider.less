@@ -1,0 +1,34 @@
+@import "_variables";
+
+.flexslider {
+  .slides {
+    li {
+      img {
+        height: 110vh;
+        max-height: 850px !important;
+        //object-fit: cover;
+        filter: brightness(90%);
+      }
+    }
+  }
+  .flex-direction-nav {
+    display: none;
+  }
+  .flex-control-nav {
+
+      position: absolute;
+      bottom: 15% !important;
+      left: 86% !important;
+      width: 30%;
+      z-index: 400 !important;
+  }
+}
+
+.flex-control-paging li a {
+  width: 70px !important;
+  height: 5px !important;
+  background: white !important;
+  &.flex-active {
+    background: linear-gradient(90deg, #DC052C 80%, #ffffff 20%) !important;
+  }
+}

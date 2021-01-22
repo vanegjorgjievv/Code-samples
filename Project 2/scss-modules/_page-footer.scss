@@ -1,0 +1,78 @@
+// stylelint-disable selector-no-qualifying-type
+
+@import "../scss/_variables.scss";
+
+.page-footer {
+    overflow: hidden;
+
+    .item-title, a {
+        margin: 0;
+        padding: 5px 10px 5px 0;
+    }
+
+    a {
+        color: transparentize($black,0);
+        display: inline-block;
+
+        &:hover {
+            color: transparentize($black,.5)
+        }
+    }
+
+    .language {
+        flex-direction: row;
+
+        a {
+            color: transparentize($black,.25);
+            padding: 10px;
+
+            &.active,
+            &:hover {
+                color: transparentize($primary,0)
+            }
+        }
+
+
+        //select language footer
+
+        .language-link-btn-footer {
+            color: rgba(0, 0, 0, 0.75);
+            padding: 10px;
+            background: none;
+            border: 0px;
+        }
+
+        #selectLanguageFooter button.active, #selectLanguageFooter button:hover {
+            color: #0057b8;
+        }
+
+        .language-link-btn-footer:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .skew {
+
+        &-bg {
+
+
+            &:before {
+                transform-origin: bottom right;
+            }
+        }
+    }
+}
+
+.kantone {
+  max-width: 275px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    width: 42px;
+  }
+}
+

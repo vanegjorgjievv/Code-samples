@@ -1,0 +1,85 @@
+@import "_variables";
+
+.tlp-portfolio-isotope {
+  // margin-left: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.tlp-portfolio .img-responsive {
+  width: 100%;
+}
+.tlp-overlay {
+  display: none !important;
+  align-items: center;
+  justify-content: center;
+}
+.tlp-portfolio-thum {
+  &:before {
+    content: url("/wp-content/uploads/images/portfolio_arrow.png");
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    //cursor: pointer;
+    z-index: 99 ;
+  }
+}
+.tlp-portfolio-isotope-button.filter-button-group {
+  @media (max-width: 992px) {
+    button {
+      display: none;
+    }
+    select {
+      display: block !important;
+    }
+  }
+  @media (min-width: 992px) {
+    button {
+      display: inline-block;
+    }
+    select {
+      display: none;
+    }
+  }
+  button {
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-family: @font-family-roboto-montserrat;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+    color: @color-black;
+    background: @color-gray-primary;
+    margin: 10px;
+    &:hover {
+      background: @color-gray-primary;
+    }
+    &.selected {
+      background: @color-red-primary;
+      color: @color-white;
+      &:hover {
+        background: @color-red-primary;
+      }
+    }
+  }
+}
+//
+.tlp-portfolio {
+  .isotope1 {
+    .tlp-portfolio-item .tlp-content {
+      background: transparent;
+    }
+    .tlp-content .tlp-content-holder {
+      padding: 15px 0;
+    }
+    .tlp-content h3 {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: @color-black;
+    }
+  }
+}

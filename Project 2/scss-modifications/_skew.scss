@@ -1,0 +1,52 @@
+@import "../scss/_variables.scss";
+
+.skew {
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    &:before {
+      bottom: 0;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: skewY(-3deg);
+      transform-origin: center;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &-primary {
+      &:before {
+        background-color: $primary-100;
+      }
+    }
+
+    &-white {
+      &:before {
+        background-color: $white;
+      }
+    }
+
+    &-secondary-100 {
+      &:before {
+        background-color: $secondary-100;
+      }
+    }
+
+    &-black-100 {
+      &:before {
+        background-color: $black-100;
+      }
+    }
+  }
+}
+.skew-bg-secondary-new:before {
+    background-color: #0057b8;
+}

@@ -1,0 +1,147 @@
+// stylelint-disable selector-no-qualifying-type
+
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.module-pricing {
+  //  background-color: $white;
+  //  border-radius: 10px; all border radiusses except for buttons must be removed according to Rouven Küng
+  border-radius: 0;
+  //  overflow: hidden;
+  .pricing {
+    &-container {
+      //      background-color: $gray-300;
+      display: flex;
+      flex-flow: column;
+      //  border-radius: 10px; all border radiusses except for buttons must be removed according to Rouven Küng
+      border-radius: 0;
+      //      flex-flow: row wrap;
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        flex-flow: row;
+        @include mdc-elevation--z4;
+      }
+    }
+
+    &-count {
+      &-5 {
+        $value: 5;
+
+        .pricing-item {
+          flex: 0 0 100%;
+          max-width: 400px;
+
+          @include media-breakpoint-up(xl) {
+            flex: 0 0 calc(100% / 5);
+            max-width: calc(100% / 5);
+          }
+        }
+      }
+    }
+
+    &-item {
+      @include mdc-elevation--z0;
+      border-left: 1px solid $gray-400;
+      //  border-radius: 0; all border radiusses except for buttons must be removed according to Rouven Küng
+      border-radius: 0;
+      display: flex;
+      flex-flow: column;
+      flex: 1 1 auto;
+      margin: 0 auto 20px auto;
+      //      max-width: 320px;
+      transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      @include mdc-elevation--z12;
+      overflow: hidden;
+
+
+
+      @include media-breakpoint-up(xl) {
+        @include mdc-elevation--z0;
+        border-radius: 0;
+        margin: 0;
+        //        max-width: none;
+        &:first-child {
+          //  border-bottom-left-radius: 10px !important; all border radiusses except for buttons must be removed according to Rouven Küng
+          //  border-top-left-radius: 10px !important; all border radiusses except for buttons must be removed according to Rouven Küng
+          border-left: none;
+          overflow: hidden;
+        }
+
+        &:last-child {
+          //  border-bottom-right-radiu: 10px; all border radiusses except for buttons must be removed according to Rouven Küng
+          //  border-top-right-radius: 10px ; all border radiusses except for buttons must be removed according to Rouven Küng
+          overflow: hidden;
+        }
+      }
+
+
+      &:hover {
+        @include mdc-elevation--z12;
+        //        z-index: 1;
+      }
+
+      &.highlight {
+        border-left: none;
+        @include mdc-elevation--z12;
+        z-index: 1;
+
+        &:hover {
+          @include mdc-elevation--z24;
+        }
+
+        .pricing-item-header {
+          background-color: $secondary;
+          color: $white;
+
+          hr {
+            border-top-color: transparentize($white,.2);
+          }
+        }
+      }
+
+      &-header {
+        background-color: $black-100;
+        border-bottom: $black-300;
+        padding: 20px;
+
+        @include media-breakpoint-up(xl) {
+          min-height: 270px;
+        }
+
+        hr {
+          border-top-color: transparentize($black,.8);
+        }
+      }
+
+      &-body {
+        background-color: $white;
+        flex: 1 0 auto;
+        padding: 20px;
+      }
+
+      &-footer {
+        display: none;
+      }
+      //
+      .price {
+        display: inline-flex;
+
+        &-value {
+          font-size: 3rem;
+          font-weight: bold;
+          line-height: 1;
+        }
+
+        &-currency {
+          line-height: 1;
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+  }
+}

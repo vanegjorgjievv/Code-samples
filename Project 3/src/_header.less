@@ -1,0 +1,121 @@
+@import "_variables";
+
+//@media(min-width: 992px) {
+//  .header-d {
+//    display: block;
+//  }
+//  .header-m {
+//    display: none;
+//  }
+//}
+//@media(max-width: 992px) {
+//  .header-d {
+//    display: none;
+//  }
+//  .header-m {
+//    display: block;
+//  }
+//}
+
+.site-header {
+  .logo-wrapper {
+    min-width: 120px;
+  }
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .left-nav-wrapper {
+    margin-left: -20px;
+  }
+  .site-navigation-inner {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-logo {
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    height: 130px;
+    @media (max-height: 1200px) {
+      height: 110px;
+    }
+    @media (min-width: 1200px) {
+      height: 130px;
+    }
+
+  }
+  #menu-right-menu {
+    padding-left: 20px;
+    @media(max-width: 1200px) {
+      padding-left:130px;
+    }
+  }
+  #menu-left-menu {
+    padding-right: 0px;
+  }
+}
+
+.languages {
+  .flag-wrapper {
+    .flag {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+
+.page-template-transparent-header-template {
+  .navbar {
+   // background: @color-white;
+    //z-index: 100;
+    //background: green;
+    @media (max-width: 1200px) {
+      li {
+        padding : 8px;
+      }
+    }
+  }
+  .header-logo {
+    @media (max-height: 1200px) {
+      height: 130px;
+    }
+    @media (min-height: 1200px) {
+      height: 110px;
+    }
+  }
+  .navbar.navbar-default {
+    background: @color-white;
+  }
+  .site-navigation-inner {
+    z-index: 9999;
+    height: 125px;
+  }
+  .single-featured {
+    z-index: -999;
+    margin-top: -165px;
+    filter: brightness(90%);
+  }
+  .dropdown-menu > li > a {
+    font-family: @font-family-roboto-montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: @color-black;
+    background: transparent;
+    &:hover {
+      background: @color-white;
+    }
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-family: @font-family-roboto-montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: @color-white
+  }
+}

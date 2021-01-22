@@ -1,0 +1,62 @@
+@import "../scss/_variables.scss";
+$btn-size: 45px;
+
+.btn {
+  border-radius: $btn-size;
+  font-size: .875rem;
+  font-weight: $font-weight-bold;
+  min-height: $btn-size;
+  padding: 11px 30px;
+  text-transform: uppercase;
+
+  .mdi {
+    font-size: 24px;
+    line-height: 12px;
+    vertical-align: middle;
+  }
+
+  &-round {
+    padding: 0;
+    height: $btn-size;
+    width: $btn-size;
+  }
+
+  &-link {
+    text-decoration: none;
+
+    &:active, &:hover, &:focus {
+      box-shadow: none !important;
+      text-decoration: none;
+    }
+
+    table & {
+      min-height: 1px;
+    }
+  }
+  //overwrite BS color behaviour
+  &-secondary {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-outline {
+    &-secondary {
+      // color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 11px 30px;
+  font-size: 1.125rem;
+}
+
+.btn {
+}

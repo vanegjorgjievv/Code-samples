@@ -1,0 +1,54 @@
+@import "../scss/_variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $black-100;
+  font-family: 'Noto Sans', sans-serif;
+  //  overflow-x: hidden; // only nessessary if skewed elements cause horizontal scrollbars
+}
+
+picture {
+  display: block;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+small, .small {
+  font-size: 87.5%;
+}
+
+.text-muted {
+  color: $text-muted
+}
+
+.text-muted-white {
+  color: $text-muted-white
+}
+
+picture {
+  img {
+    max-width: 100%;
+  }
+}
+
+hr {
+  position: relative
+}
+
+a {
+  @include system-transition;
+}
+
+.textmark {
+  background-color: $primary-200;
+  box-decoration-break: clone;
+  color: white;
+  hyphens: auto;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+}

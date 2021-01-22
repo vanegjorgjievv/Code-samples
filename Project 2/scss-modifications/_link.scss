@@ -1,0 +1,44 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.link {
+  margin: -8px 0;
+  padding: 8px 0;
+  &-black {
+    color: $white;
+
+    &:hover {
+      color: $text-muted-white;
+    }
+
+    &-muted {
+      color: $text-muted-white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &-white {
+    color: $white;
+
+    &:hover {
+      color: $text-muted-white;
+    }
+
+    &-muted {
+      color: $text-muted-white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.link-container {
+    z-index: 10;
+}

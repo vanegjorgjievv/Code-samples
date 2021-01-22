@@ -1,0 +1,33 @@
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "../scss-modifications/_elevations.scss";
+
+.infocircle {
+  align-items: center;
+  background-color: $black-100;
+  border: 1px solid $border-color;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.25rem;
+  &-size {
+
+    &-140 {
+      height: 140px;
+      min-width: 140px;
+      padding: 0;
+      width: 140px;
+    }
+  }
+
+  &-body {
+    text-align: center;
+    padding: 20px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
